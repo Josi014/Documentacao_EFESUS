@@ -27,7 +27,7 @@ export function inicializarZoom() {
   });
 }
 document.addEventListener("scroll", () => {
-  const textos = document.querySelectorAll(".scroll-text");
+  const textos = document.querySelectorAll(".scroll-event");
   const tela = window.innerHeight;
 
   textos.forEach(texto => {
