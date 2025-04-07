@@ -298,6 +298,10 @@ td{
     width: 20%;
   }
 
+  .logo-home{
+    margin-left: 20%;
+  }
+
   .container-page {
     flex: 1;
     margin-left: 20%;
