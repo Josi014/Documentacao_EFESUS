@@ -20,7 +20,7 @@ async function carregarMenu() {
 
           if (!caminhoPai) {
             const imagemPasta = document.createElement("img");
-            imagemPasta.src = item.imagem || "../images/imgMenu/veplex-logo.png";
+            imagemPasta.src = item.imagem || "/images/imgMenu/veplex-logo.png";
             imagemPasta.alt = `Ícone da pasta ${item.nome}`;
             imagemPasta.className = "imagem_menu";
             imagemPasta.style.filter = "invert(100%)";
