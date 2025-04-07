@@ -1,4 +1,4 @@
-import { inicializarZoom } from './zoom.js';
+import { inicializarZoom } from './animacoes.js';
 
 async function carregarPagina(caminho) {
   try {
