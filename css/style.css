@@ -61,6 +61,7 @@ body {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 15%;
 }
 
 
@@ -257,7 +258,6 @@ hr {
   width: 100px;
   height: 50px;
   margin: 10px;
-  margin-left: 16%;
 }
 
 .logo{
