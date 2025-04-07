@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="image/x-icon" href="/images/imgMenu/veplex-logo.png" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- <link
+    href="https://swiffyslider.com/configuration/?slider-item-ratio=slider-item-ratio&slider-item-ratio-value=slider-item-ratio-32x9&slider-nav-style=slider-nav-caretfill&slider-nav-page=slider-nav-page&slider-nav-autoplay=slider-nav-autoplay&data-slider-nav-autoplay-interval=3000&slider-indicators-style=slider-indicators-round&slider-nav-animation-style=slider-nav-animation-zoomout&slider-nav-animation-speed=slider-nav-animation-slow&preview-style=preview-images"
+    rel="styleshee"> -->
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link href="/css/style.css" rel="stylesheet" />
+
+  <title>Documentação EFESUS</title>
+</head>
+
+<body>
+  <div id="conteudo">
+    <aside class="sidebar-wrapper" id="sidebar">
+      <nav>
+        <ul class="nav flex-column" id="menu"></ul>
+      </nav>
+    </aside>
+  </div>
+
+  <main id="pagina">
+    <div
+      class="swiffy-slider slider-item-ratio slider-item-ratio-32x9 slider-nav-caretfill slider-nav-page slider-nav-autoplay slider-indicators-round slider-nav-animation-zoomout slider-nav-animation-slow"
+      data-slider-nav-autoplay-interval="3000">
+      <img class="logo-home" src="/images/imgMenu/veplex-logo.png" />
+
+      <ul class="slider-container">
+        <li>
+          <img src="./images/slider/grupo_veplex.jpg" style="max-width: 100%; height: auto" />
+        </li>
+        <li>
+          <img src="./images/slider/up_vendas.jpg" style="max-width: 100%; height: auto" />
+        </li>
+        <li>
+          <img src="./images/slider/banner-aplicativos-2-reduzida.jpg" style="max-width: 100%; height: auto" />
+        </li>
+      </ul>
+
+      <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./scripts/menu.js"></script>
+  <script type="module" src="./scripts/router.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+</body>
+
+</html>

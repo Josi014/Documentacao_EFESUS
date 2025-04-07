@@ -1,0 +1,264 @@
+
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Início >=*
+                    </button>
+                </h5>
+
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    (Data de início do período, obrigatório)
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Término <= </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    (Data de término do período)
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Região de Venda
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    (Código da região de venda)
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFor">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+                        Cliente
+                    </button>
+                </h5>
+
+            </div>
+            <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
+                <div class="card-body">
+                    (Código do cliente)
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Formato*
+                    </button>
+                </h5>
+
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    (PDF/XLS, obrigatório)
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Detalhar Clientes*
+                    </button>
+                </h5>
+
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    Não/Sim, obrigatório
+                </div>
+            </div>
+        </div>
+
+
+
+var magnifying_area = document.querySelectorAll(".magnifying_area");
+var magnifying_img = document.querySelectorAll(".magnifying_img");
+
+magnifying_area.addEventListener("mousemove", function(event){
+
+    const rect = magnifying_area.getBoundingClientRect();
+
+    // console.log("Rect: " + rect.left + 
+    
+    clientX = event.clientX - rect.left;
+    clientY = event.clientY - rect.top;
+
+    // console.log("clientX: " + clientX)
+    // console.log("clientY: " + clientY)
+    // console.log("clientY true: " + event.clientY)
+
+    mWidth = magnifying_area.offsetWidth
+    mHeight = magnifying_area.offsetHeight
+
+    // console.log("mWidth: " + mWidth)
+    // console.log("mHeight: " + mHeight)
+
+    clientX = clientX / mWidth * 100
+    clientY = clientY / mHeight * 100
+    
+
+    // console.log("new clientX: " + clientX)
+    // console.log("new clientY: " + clientY)
+
+    magnifying_img.style.transform = 'translate(-'+clientX+'%,-'+clientY+'%) scale(2)'
+    //magnifying_img.style.transform = 'translate(-50%, -50%) scale(2)'
+
+});
+
+magnifying_area.addEventListener("mouseleave", function(){
+
+    magnifying_img.style.transform = 'translate(-50%, -50%) scale(1)'
+    console.log("mouseleave")
+
+});
+
+
+
+/* .image-container {
+  overflow: hidden;
+  max-width: 80%;
+  position: relative;
+  margin: 50px auto;
+  border: 2px solid;
+  border-color: var(--primary-color-rb);
+
+}
+
+.image {
+  cursor: grab;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+} */
+
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+} */
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script> -->
+
+
+        /* .mb-0 button{
+            color: var(--primary-color-rb);
+            font-size: var(--primary_font);
+            text-decoration: none;
+          }
+          
+          .mb-0 button:hover{
+            text-decoration: none;
+            color: var(--primary-color-vb);
+          } */
+          
+
+
+          
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Início >=*</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Início >=*</h5>
+                    <p>(Data de início do período, obrigatório)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Término <= </h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Término <= </h5>
+                    <p>(Data de término do período)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Região de Venda</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Região de Venda</h5>
+                    <p>(Código da região de venda)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Cliente</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Cliente</h5>
+                    <p>(Código do cliente)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Formato*</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Formato*</h5>
+                    <p>(PDF/XLS, obrigatório)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Início >=*</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h5>Detalhar Clientes*</h5>
+                    <p>Não/Sim, obrigatório</p>
+                </div>
+            </div>
+        </div>
