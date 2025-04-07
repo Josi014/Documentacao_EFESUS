@@ -100,6 +100,24 @@ async function carregarMenu() {
     console.error("Erro ao carregar menu:", error);
     alert("Ocorreu um erro ao carregar o menu. Veja o console para detalhes.");
   }
+
+
+  
 }
+window.addEventListener("DOMContentLoaded", () => {
+  carregarMenu();
+
+  const toggleBtn = document.getElementById('toggleSidebar');
+  const sidebar = document.getElementById('sidebar');
+
+  if (toggleBtn && sidebar) {
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("sidebar-fechado");
+    });
+  } else {
+    console.warn("Botão ou sidebar não encontrado.");
+  }
+});
+
 
 window.onload = carregarMenu;
