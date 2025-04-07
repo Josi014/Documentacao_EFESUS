@@ -26,13 +26,15 @@ export function inicializarZoom() {
     });
   });
 }
-
 document.addEventListener("scroll", () => {
-  const texto = document.querySelector(".scroll-text");
-  const posicao = texto.getBoundingClientRect().top;
+  const textos = document.querySelectorAll(".scroll-text");
   const tela = window.innerHeight;
 
-  if (posicao < tela - 100) {
-    texto.classList.add("visible");
-  }
+  textos.forEach(texto => {
+    const posicao = texto.getBoundingClientRect().top;
+
+    if (posicao < tela - 100) {
+      texto.classList.add("visible");
+    }
+  });
 });

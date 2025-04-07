@@ -289,9 +289,9 @@ td{
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease-out;
-  text-align: center;
   font-size: 2rem;
-  color: var(--primary-color-az);
+  color: var(--primary-color-rb);
+  font-family: 'Raleway', sans-serif;
 }
 
 .scroll-text.visible {
@@ -299,7 +299,8 @@ td{
   transform: translateX(0);
 }
 .description{
-  color: var(--primary-color-az);
+  color: var(--primary-color-rb);
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
