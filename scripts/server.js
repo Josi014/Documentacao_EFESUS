@@ -5,8 +5,6 @@ const app = express();
 
 const menuDir = path.join(__dirname, '..', 'Menus');
 
-// const imageDir = path.join(__dirname, '..', 'public', 'images');
-
 app.use('/Menus', express.static(menuDir));
 app.use('/images/imgMenu', express.static(path.join(__dirname, '..', 'public', 'images', 'imgMenu')));
 
