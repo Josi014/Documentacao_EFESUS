@@ -26,6 +26,7 @@ export function inicializarZoom() {
     });
   });
 }
+
 document.addEventListener("scroll", () => {
   const textos = document.querySelectorAll(".scroll-event");
   const tela = window.innerHeight;
@@ -39,18 +40,3 @@ document.addEventListener("scroll", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    const textos = document.querySelectorAll(".scroll-text");
-    const tela = window.innerHeight;
-
-    textos.forEach(texto => {
-      const posicao = texto.getBoundingClientRect().top;
-
-      if (posicao < tela - 100) {
-        texto.offsetHeight; 
-        texto.classList.add("visible");
-      }
-    });
-  }, 3000); 
-});
