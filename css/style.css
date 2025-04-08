@@ -33,7 +33,7 @@ body {
 }
 
 .sidebar-wrapper {
-  max-width: 15%;
+  max-width: 10%;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,49 +45,37 @@ body {
 
 .swiffy-slider {
   top: 0%;
-  margin-left: 15%;
-  width: calc(100% - 15%);
+  margin-left: 10%;
+  width: calc(100% - 10%);
   overflow: hidden;
 }
 
+.toggle-btn_img-logo {
+  display: flex;
+  top: 0%;
+  margin: 10px;
+  margin-left: 10%;
+}
+
 .toggle-btn {
-  z-index: 1100;
   background-color: var(--primary-color-start);
   color: var(--primary-color-rbc);
-  top: 0%;
   border: none;
   font-size: 24px;
   font-weight: bolder;
-  padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
-  margin-left: 15%;
 }
 
-
-body.sidebar-fechado .sidebar-wrapper {
-  transform: translateX(-100%);
-}
-
-body.sidebar-fechado #pagina,
-body.sidebar-fechado .container-page,
-body.sidebar-fechado .swiffy-slider
- {
-  margin-left: 0;
-  width: 100%;
-}
-
-body.sidebar-fechado .logo-home,
-body.sidebar-fechado #toggleSidebar{
-  margin-left: 0%;
-  margin: 5px;
+.logo-home {
+  width: 100px;
+  height: 50px;
 }
 
 #menu {
-  width: 15%;
+  width: 10%;
   background-color: var(--primary-color-rb);
   color: var(--primary-color-start);
-  font-weight: bold;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -100,6 +88,8 @@ body.sidebar-fechado #toggleSidebar{
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
+  font-size: 10px;
+
 }
 
 #menu>li {
@@ -120,7 +110,7 @@ body.sidebar-fechado #toggleSidebar{
   border-radius: 5px;
 }
 
-#menu img{
+#menu img {
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -188,6 +178,22 @@ span {
   transform: translateY(-50%);
 }
 
+body.sidebar-fechado .sidebar-wrapper {
+  transform: translateX(-100%);
+}
+
+body.sidebar-fechado #pagina,
+body.sidebar-fechado .container-page,
+body.sidebar-fechado .swiffy-slider {
+  margin-left: 0;
+  width: 100%;
+}
+
+body.sidebar-fechado .toggle-btn_img-logo {
+  margin-left: 0%;
+  margin: 5px;
+}
+
 .arquivo_a {
   color: var(--primary-color-start);
   text-decoration: none;
@@ -200,8 +206,8 @@ a {
 
 .container-page {
   flex: 1;
-  margin-left: 15%;
-  width: calc(100% - 15%);
+  margin-left: 12%;
+  width: calc(100% - 12%);
   overflow: hidden;
   margin-right: auto;
   padding: 10px;
@@ -224,10 +230,10 @@ hr {
   border: 3px solid var(--primary-color-rbc);
   border-radius: 15px;
   margin: 1rem auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
-.magnifying_area:hover{
+.magnifying_area:hover {
   border-color: var(--primary-color-vb);
 }
 
@@ -246,21 +252,14 @@ hr {
 }
 
 .conteudo {
-  background-color:var(--primary-color-cb);
+  background-color: var(--primary-color-cb);
   margin: 0%;
   max-height: 100%;
   border: 2px solid var(--primary-color-rb);
   border-radius: 15px;
 }
 
-
-.logo-home {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-}
-
-.logo{
+.logo {
   width: 100px;
   height: 50px;
   margin: 10px;
@@ -269,14 +268,14 @@ hr {
 table {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-td{
+td {
   width: 50%;
 }
 
-.title-field{
+.title-field {
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color-rbc);
@@ -285,7 +284,7 @@ td{
   line-height: 1.3;
 }
 
-.scroll-event{
+.scroll-event {
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease-out;
@@ -298,7 +297,8 @@ td{
   opacity: 1;
   transform: translateX(0);
 }
-.description{
+
+.description {
   color: var(--primary-color-rb);
   font-weight: normal;
 }
@@ -308,29 +308,37 @@ td{
   .title-field {
     font-size: 1.5rem;
   }
-  #menu {
-    width: 20%;
+
+
+  .logo-home {
+    width: 40px;
+    height: 20px;
   }
 
-  .logo-home{
-    margin-left: 20%;
+  .sidebar-wrapper {
+    max-width: 12%;
   }
 
-  .container-page {
-    flex: 1;
-    margin-left: 20%;
-    width: calc(100% - 20%);
-    overflow: hidden;
-    margin-right: auto;
-    padding: 10px;
+  #menu{
+    width: 12%;
+    font-size: 5px;
   }
 
   .swiffy-slider {
     top: 0%;
-    margin-left: 20%;
-    width: calc(100% - 20%);
+    margin-left: 12%;
+    width: calc(100% - 12%);
     overflow: hidden;
+  }
+  
 
+  .toggle-btn {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  .toggle-btn_img-logo {
+    margin-left: 12%;
   }
 
   .magnifying_area {
@@ -343,8 +351,9 @@ td{
     transform: none !important;
   }
 
-  .scroll-text{
+  .scroll-event {
     font-size: 1rem;
+
   }
 
 }
