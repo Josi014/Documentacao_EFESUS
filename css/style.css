@@ -13,6 +13,7 @@
   --primary-color-rbc: #ab83b9;
   --primary-color-start: white;
   --primary-color-cb: #f2f2f2;
+  --primary-color-cb2: #d1d1d1;
   --primary-color-az: rgb(59 130 246 / var(--tw-bg-opacity, 1));
   --primary_font: calc(1rem*1vmin);
   --speed: 200ms;
@@ -21,7 +22,8 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: var(--primary-color-cb);
   font-family: var(--primary-family-font);
   top: 0%;
   margin: 0%;
