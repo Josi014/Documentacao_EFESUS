@@ -176,7 +176,8 @@ body.sidebar-fechado .logo-home {
 }
 
 .submenu ul {
-  background-color: #8837a8;
+  background-color: rgba(171, 131, 185, 0.3);
+  backdrop-filter: blur(4px);
 }
 
 ul {
@@ -310,7 +311,7 @@ td {
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease-out;
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--primary-color-rb);
   font-family: 'Raleway', sans-serif;
 }
