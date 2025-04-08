@@ -111,7 +111,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.getElementById('sidebar');
 
   if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener("click", () => {
+    toggleBtn.addEventListener("mousemove",() => {
       document.body.classList.toggle("sidebar-fechado");
     });
   } else {
