@@ -206,8 +206,8 @@ a {
 
 .container-page {
   flex: 1;
-  margin-left: 12%;
-  width: calc(100% - 12%);
+  margin-left: 10%;
+  width: calc(100% - 10%);
   overflow: hidden;
   margin-right: auto;
   padding: 10px;
@@ -355,5 +355,7 @@ td {
     font-size: 1rem;
 
   }
+  
+
 
 }
