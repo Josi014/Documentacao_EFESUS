@@ -45,8 +45,7 @@ body {
 
 .swiffy-slider {
   top: 0%;
-  margin-left: 10%;
-  width: calc(100% - 10%);
+  width: 100%;
   overflow: hidden;
 }
 
@@ -72,9 +71,33 @@ body {
   height: 50px;
 }
 
+body:not(.sidebar-fechado) .toggle-bnt-mobile{
+  margin-left: 20%;
+}
+
+body:not(.sidebar-fechado) .logo-home {
+
+}
+
+body:not(.sidebar-fechado) .toggle-btn_img-logo {
+  margin-left: 0%;
+  margin: 10px;
+}
+
+body.sidebar-fechado .toggle-bnt-mobile {
+  top: 0%;
+  margin-left: 0%;
+}
+
+body.sidebar-fechado .logo-home {
+  position: relative;
+  margin-left: 0%;
+}
+
 #menu {
-  width: 10%;
-  background-color: var(--primary-color-rb);
+  width: 20%;
+  background-color: rgba(112, 49, 137, 0.3);
+  backdrop-filter: blur(4px);
   color: var(--primary-color-start);
   list-style-type: none;
   padding: 0;
@@ -122,8 +145,8 @@ body {
   list-style-type: none;
   padding: 0;
   display: none;
-  background-color: #a74eca;
-  width: 100%;
+  background-color: rgba(112, 49, 137, 0.3);
+  backdrop-filter: blur(4px);
   text-align: center;
   border-radius: 5px;
 }
@@ -191,7 +214,6 @@ body.sidebar-fechado .swiffy-slider {
 
 body.sidebar-fechado .toggle-btn_img-logo {
   margin-left: 0%;
-  margin: 5px;
 }
 
 .arquivo_a {
@@ -206,8 +228,7 @@ a {
 
 .container-page {
   flex: 1;
-  margin-left: 10%;
-  width: calc(100% - 10%);
+  width: 100%;
   overflow: hidden;
   margin-right: auto;
   padding: 10px;
@@ -344,6 +365,29 @@ td {
     height: 20px;
   }
 
+  body:not(.sidebar-fechado) .toggle-bnt-mobile{
+    margin-left: 50%;
+  }
+  
+  /* body:not(.sidebar-fechado) .logo-home {
+    position: absolute;
+    margin-left: 0%;
+  }
+   */
+  body:not(.sidebar-fechado) .toggle-btn_img-logo {
+    margin-left: 0%;
+    margin: 10px;
+  }
+  
+  body.sidebar-fechado .toggle-bnt-mobile {
+    margin-left: 0%;
+  }
+  
+  body.sidebar-fechado .logo-home {
+    position: relative;
+    margin-left: 0%;
+  }
+
   #menu {
     width: 50%;
     font-size: 10px;
@@ -374,29 +418,6 @@ td {
     font-size: 15px;
   }
 
-  body:not(.sidebar-fechado) .toggle-bnt-mobile{
-    margin-left: 50%;
-  }
-
-  body:not(.sidebar-fechado) .logo-home {
-    position: absolute;
-    margin-left: 0%;
-  }
-
-  body:not(.sidebar-fechado) .toggle-btn_img-logo {
-    margin-left: 0%;
-    margin: 10px;
-  }
-  
-  body.sidebar-fechado .toggle-bnt-mobile {
-    margin-left: 0%;
-  }
-
-  body.sidebar-fechado .logo-home {
-    position: relative;
-    margin-left: 0%;
-  }
-
   .magnifying_area {
     max-width: 100%;
     border: 2px solid black;
@@ -422,7 +443,6 @@ td {
   }
 
   .swiffy-slider {
-    margin-left: 0%;
     width: 100%;
   }
 
