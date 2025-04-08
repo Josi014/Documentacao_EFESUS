@@ -237,6 +237,7 @@ a {
 hr {
   border: 2px solid var(--primary-color-vb);
   border-radius: 5px;
+  top: 0%;
 }
 
 .wrapper {
