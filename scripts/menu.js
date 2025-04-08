@@ -60,7 +60,6 @@ async function carregarMenu() {
             carregarPagina(caminho);
           });
 
-          // Cria imagem só para arquivos na raiz
           if (caminhoPai === "") {
             const imagemArquivo = document.createElement("img");
             const nomeImagem = item.nome.replace(".html", "") + ".png";
