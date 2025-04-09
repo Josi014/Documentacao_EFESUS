@@ -2,7 +2,7 @@ import { carregarPagina } from "./router.js";
 
 async function carregarMenu() {
   try {
-    const response = await fetch("http://localhost:3000/menu");
+    const response = await fetch("http://192.168.3.32:3000/menu");
     if (!response.ok) {
       throw new Error(`Erro HTTP! Código: ${response.status}`);
     }
@@ -17,6 +17,7 @@ async function carregarMenu() {
 
         if (item.tipo === "pasta") {
           const pastaDiv = document.createElement("div");
+   
 
           if (!caminhoPai) {
             const imagemPasta = document.createElement("img");
@@ -74,6 +75,7 @@ async function carregarMenu() {
             const arquivoDiv = document.createElement("div");
             arquivoDiv.appendChild(imagemArquivo);
             arquivoDiv.appendChild(link);
+          
             li.appendChild(arquivoDiv);
             li.appendChild(document.createElement("br"));
           } else {
