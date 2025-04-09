@@ -430,6 +430,8 @@ p{
 
   .conteudo {
     margin-left: 0%;
+    width: 100%;
+    border: none;
   }
 
   .swiffy-slider {
