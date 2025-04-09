@@ -81,6 +81,7 @@ body {
 .logo-home {
   width: 100px;
   height: 50px;
+  margin: 10px;
 }
 
 body:not(.sidebar-fechado) .toggle-bnt-mobile{
@@ -94,11 +95,6 @@ body:not(.sidebar-fechado) .toggle-btn_img-logo {
 
 body.sidebar-fechado .toggle-bnt-mobile {
   top: 0%;
-  margin-left: 0%;
-}
-
-body.sidebar-fechado .logo-home {
-  position: relative;
   margin-left: 0%;
 }
 
@@ -378,10 +374,10 @@ p{
     font-size: 1.5rem;
   }
 
-
   .logo-home {
     width: 60px;
     height: 30px;
+    margin: 10px;
   }
 
   .toggle-btn{
@@ -393,20 +389,10 @@ p{
   }
   
 
-  body:not(.sidebar-fechado) .toggle-btn_img-logo {
-    margin-left: 0%;
-    margin: 10px;
-  }
-  
   body.sidebar-fechado .toggle-bnt-mobile {
     margin-left: 0%;
   }
   
-  body.sidebar-fechado .logo-home {
-    position: relative;
-    margin-left: 0%;
-  }
-
   #menu {
     width: 50%;
     font-size: 12px;
