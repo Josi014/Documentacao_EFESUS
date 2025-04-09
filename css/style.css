@@ -51,12 +51,12 @@ body {
   overflow: hidden;
 }
 
-.toggle-btn_img-logo {
+/* .toggle-btn_img-logo {
   display: flex;
   top: 0%;
   margin: 10px;
   margin-left: 10%;
-}
+} */
 
 .toggle-btn {
   background-color: var(--primary-color-start);
@@ -86,11 +86,6 @@ body {
 
 body:not(.sidebar-fechado) .toggle-bnt-mobile{
   margin-left: 20%;
-}
-
-body:not(.sidebar-fechado) .toggle-btn_img-logo {
-  margin-left: 0%;
-  margin: 10px;
 }
 
 body.sidebar-fechado .toggle-bnt-mobile {
@@ -217,9 +212,6 @@ body.sidebar-fechado .swiffy-slider {
   width: 100%;
 }
 
-body.sidebar-fechado .toggle-btn_img-logo {
-  margin-left: 0%;
-}
 
 .arquivo_a {
   color: var(--primary-color-start);
@@ -375,9 +367,9 @@ p{
   }
 
   .logo-home {
-    width: 60px;
-    height: 30px;
-    margin: 10px;
+    width: 40px;
+    height: 20px;
+    margin: 0%;
   }
 
   .toggle-btn{
