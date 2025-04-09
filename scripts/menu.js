@@ -2,7 +2,7 @@ import { carregarPagina } from "./router.js";
 
 async function carregarMenu() {
   try {
-    const response = await fetch("http://192.168.3.32:3000/menu");
+    const response = await fetch("http://192.168.18.18:3000/menu");
     if (!response.ok) {
       throw new Error(`Erro HTTP! Código: ${response.status}`);
     }
