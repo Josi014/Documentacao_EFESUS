@@ -262,3 +262,36 @@ magnifying_area.addEventListener("mouseleave", function(){
                 </div>
             </div>
         </div>
+
+        /* .conteudo {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+          } */
+          
+          
+          /* table {
+            width: 50%;
+            margin: 0 auto;
+            padding: 15px;
+            border-collapse: collapse;
+            border-spacing: 0 15px;
+            display: flex;
+            justify-content: center;
+          } */
+          
+          
+          
+          
+          /* td {
+            display: inline-block;
+            padding: 15px; 
+            vertical-align: top;
+            text-align: left;
+            width: 48%;
+            word-wrap: break-word;
+            white-space: normal;
+            margin-right: 2%;
+            box-sizing: border-box;
+          } */
+          
