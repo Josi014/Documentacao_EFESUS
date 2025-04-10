@@ -141,7 +141,6 @@ body.sidebar-fechado .sidebar-wrapper {
 body.sidebar-fechado #pagina,
 body.sidebar-fechado .container-page,
 body.sidebar-fechado .swiffy-slider {
-  margin-left: 0;
   width: 100%;
 }
 
@@ -285,7 +284,6 @@ table {
 
 }
 
-
 td {
   flex: 0 0 auto; 
   width: 300px;   
@@ -311,6 +309,16 @@ p.subtitle {
   padding: 0;
 }
 
+h1{
+  color: #2f1e48;
+}
+
+.text{
+  position: relative;
+  overflow: hidden;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
 
 @media (max-width: 768px) {
   body {
@@ -362,11 +370,11 @@ p.subtitle {
     font-size: 1rem;
   }
 
-  .container-page,
+  /* .container-page,
   .wrapper {
     width: 100%;
     padding: 0 20px;
-  }
+  } */
 
   td h3 {
     font-size: 16px;
